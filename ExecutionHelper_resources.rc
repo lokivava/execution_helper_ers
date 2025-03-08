@@ -1,0 +1,2 @@
+config_sample RCDATA "assets\\config.json"
+logox64 RCDATA "assets\\logo.png"

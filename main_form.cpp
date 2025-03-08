@@ -11,6 +11,7 @@
 #include <System.JSON.Builders.hpp>
 #include <System.Classes.hpp>
 
+static constexpr const char * CONFIG_FILE = 		"config.json";
 //---------------------------------------------------------------------------
 #pragma package(smart_init)
 #pragma resource "*.dfm"
@@ -204,7 +205,7 @@ void __fastcall TMainForm::saveBtnClick(TObject *Sender)
 //		createConsole();
 //	std::cout << "Console: " << std::endl;
 //	TStringWriter * stringWriter = new TStringWriter();
-	TFileStream *output = new TFileStream("config.json", fmCreate);
+	TFileStream *output = new TFileStream(CONFIG_FILE, fmCreate);
 	TJsonTextWriter * writer = new TJsonTextWriter(output);
 	writer->Formatting = TJsonFormatting::Indented;
 	writer->WriteStartObject();
@@ -237,7 +238,14 @@ void __fastcall TMainForm::saveBtnClick(TObject *Sender)
 
 void __fastcall TMainForm::loadBtnClick(TObject *Sender)
 {
-	TFileStream *input = new TFileStream("config.json", fmOpenRead);
+	if(!FileExists(CONFIG_FILE))
+	{
+		TResourceStream *resource = new TResourceStream(reinterpret_cast<unsigned int>(GetModuleHandle(NULL)), L"CONFIG_SAMPLE", RT_RCDATA);
+		resource->SaveToFile(CONFIG_FILE);
+		delete resource;
+		Application->MessageBox(L"New empty configuration file (config.json) was created\nPlease configurate application", L"Information");
+	}
+	TFileStream *input = new TFileStream(CONFIG_FILE, fmOpenRead);
 	TTextReader *textReader = new TStreamReader(input);
 	TJsonTextReader *reader = new TJsonTextReader(textReader);
 	TJSONIterator *json = new TJSONIterator(reader);

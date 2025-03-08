@@ -1,0 +1,9 @@
+{
+    "tiles": [
+        {
+            "type": "tile",
+            "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"1080\" height=\"1080\" viewBox=\"0 0 1080 1080\" xml:space=\"preserve\"><g transform=\"matrix(11.89 0 0 13.89 539.95 539.92)\"><rect style=\"stroke: rgb(0,0,0); stroke-width: 2; fill: rgb(65,181,206);\" x=\"-33.0835\" y=\"-33.0835\" width=\"66.167\" height=\"66.167\" /></g><g transform=\"matrix(9.23 0 0 4.02 538.35 198.82)\"><rect style=\"stroke: rgb(101,101,101); stroke-width: 2; fill: rgb(15,70,29);\" x=\"-37.4585\" y=\"-19.4165\" width=\"74.917\" height=\"38.833\" /></g><g transform=\"matrix(2.92 0 0 2.92 284.56 385.91)\"><rect fill=\"#656565\" x=\"-33.0835\" y=\"-33.0835\" width=\"66.167\" height=\"66.167\" /></g><g transform=\"matrix(2.92 0 0 2.92 286.2 608.54)\"><rect fill=\"#656565\" x=\"-33.085\" y=\"-33.085\" width=\"66.17\" height=\"66.17\" /></g><g transform=\"matrix(2.92 0 0 2.92 287.89 857.8)\"><rect fill=\"#656565\" x=\"-33.085\" y=\"-33.085\" width=\"66.17\" height=\"66.17\" /></g><g transform=\"matrix(6.71 0.38 -0.17 2.92 665.73 856.17)\"><rect fill=\"#B18025\" x=\"-33.085\" y=\"-33.085\" width=\"66.17\" height=\"66.17\" /></g><g transform=\"matrix(2.91 -0.24 0.24 2.91 540 611.95)\"><rect fill=\"#656565\" x=\"-33.085\" y=\"-33.085\" width=\"66.17\" height=\"66.17\" /></g><g transform=\"matrix(2.92 0 0 2.92 540 386.01)\"><rect fill=\"#656565\" x=\"-33.085\" y=\"-33.085\" width=\"66.17\" height=\"66.17\" /></g><g transform=\"matrix(2.92 0 0 2.92 794.24 392.69)\"><rect fill=\"#656565\" x=\"-33.085\" y=\"-33.085\" width=\"66.17\" height=\"66.17\" /></g><g transform=\"matrix(2.92 0 0 2.92 794.28 620.35)\"><rect fill=\"#656565\" x=\"-33.085\" y=\"-33.085\" width=\"66.17\" height=\"66.17\" /></g></svg>",
+            "command": "calc"
+        }
+    ]
+}

@@ -237,6 +237,7 @@ object MainForm: TMainForm
         Height = 17
         Align = alTop
         Caption = 'destinationAskChk'
+        Enabled = False
         TabOrder = 0
       end
       object splitAnimateChk: TCheckBox
